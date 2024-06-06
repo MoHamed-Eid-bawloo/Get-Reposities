@@ -1,0 +1,124 @@
+/* reposities.css */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Tahoma, Arial;
+}
+.repost-container {
+    width: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #e0e0e0b9;
+    border-radius: 10px;
+}
+
+.repos-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.repos-input:placeholder-shown {
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.repos-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 20px;  
+    cursor: pointer;  
+}
+.repos-input:focus {
+    border: 2px solid orangered;
+}
+.repos-answer {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: auto;
+    font-size: 20px;
+}
+.mainDiv {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+.mainDiv p {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.mainDiv div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mainDiv div a,
+.mainDiv div span {
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 6px;
+    margin-right: 10px;
+    color: white;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.mainDiv div a {
+    background-color: green;
+    transition: background-color 0.3s ease;
+}
+.mainDiv div a:hover {
+    background-color: darkgreen;
+}
+.mainDiv div span {
+    background-color: #0d6efd;
+    transition: background-color 0.3s ease;
+}
+.mainDiv div span:hover {
+    background-color: #0a58ca;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .repos-input {
+        width: 80%;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .repos-button {
+        width: 19%;
+        display: inline-block;
+    }
+    .mainDiv {
+        flex-direction: row;
+        align-items: center;
+    }
+    .mainDiv p {
+        width: 60%;
+        margin-bottom: 0;
+    }
+    .mainDiv div {
+        width: 40%;
+    }
+}
